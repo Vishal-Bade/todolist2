@@ -1,0 +1,146 @@
+* {
+    background-color: rgb(105, 42, 68);
+}
+
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img_div {
+    height: 50px;
+}
+
+figcaption {
+    color: rgb(245, 242, 244);
+}
+
+.addItems {
+    padding-left: 7px;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    justify-items: center;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+input {
+    border: none;
+    background-color: white;
+}
+
+span {
+    cursor: pointer;
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+}
+
+.eachItem {
+    height: 4vh;
+    margin-top: 2vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+h3 {
+    text-transform: capitalize;
+    background-color: white;
+}
+
+.btn {
+    height: 30px;
+    margin-top: 2vh;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+.btn span {
+    border-radius: 1px;
+}
+
+
+.btn span:hover, .btn:hover  {
+    color: red;
+    background-color: black;
+}
+
+.deleteItem:hover {
+    color: red;
+}
+
+@media (max-width: 1090px) {
+    .main-div {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 200px 800px 200px;
+        grid-template-rows: 100px 500px 100px;
+    }
+
+    .child-div {
+        grid-area: 2/2/3/3;
+    }
+
+    .img_div {
+        height: 400px;
+    }
+
+    .addItems {
+        padding-left: 15px;
+        border-radius: 15px;
+        height: 100px;
+    }
+
+    figcaption {
+        font-size: 5rem;
+        color: rgb(189, 136, 12);
+    }
+
+    input, span, ul li {
+        font-size: 3rem;
+    }
+
+    .showItems button {
+        height: 80px;
+    }
+
+    .add_btn {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 5rem;
+    }
+
+    .eachItem {
+        height: 7rem;
+        margin-top: 3vh;
+        padding-left: 2vh;
+    }
+
+    .deleteItem {
+        font-size: 6rem;
+    }
+
+    .btn span:active, .btn:active  {
+        color: red;
+        background-color: black;
+    }
+
+    .addItems span:active {
+        color: rgb(4, 132, 4);
+    }
+}
