@@ -133,3 +133,45 @@ h3 {
         font-size: 4rem;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .child-div {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .img_div {
+        height: 5rem;
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
+
+    .addItems {
+        height: 3rem;
+    }
+
+    input {
+        width: 90%;
+        height: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .add_btn, .edit_btn, .delete_btn {
+        font-size: 2.7rem;
+    }
+
+    .eachItem {
+        height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    .showItems button {
+        height: 3rem;
+        font-size: 2.2rem;
+    }
+}
