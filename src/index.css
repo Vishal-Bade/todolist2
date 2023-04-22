@@ -92,6 +92,19 @@ h3 {
     background-color: red;
 }
 
+footer {
+    margin-top: 14rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(13, 13, 14);
+}
+
+big {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 @media (max-width: 1082px) {
     .child-div {
         width: 80%;
@@ -128,11 +141,27 @@ h3 {
         font-size: 6rem;
     }
 
+    .showItems button span {
+        font-size: 7rem;
+    }
+    
     .showItems button {
-        height: 5rem;
+        height: 8rem;
+        width: 15rem;
+        border-radius: 1vh;
+    }
+
+    footer {
+        margin-top: 80rem;
+        font-size: 3rem;
+    }
+
+    big {
         font-size: 4rem;
+        font-weight: bold;
     }
 }
+
 
 @media only screen and (max-width: 500px) {
     .child-div {
@@ -170,8 +199,24 @@ h3 {
         font-size: 2.8rem;
     }
 
+    .showItems button span {
+        font-size: 3.5rem;
+    }
+    
     .showItems button {
-        height: 3rem;
-        font-size: 2.2rem;
+        height: 4rem;
+        width: 7.5rem;
+        border-radius: 1vh;
+    }
+
+    footer {
+        margin-top: 19rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    big {
+        font-size: 2.5rem;
+        font-weight: bold;
     }
 }

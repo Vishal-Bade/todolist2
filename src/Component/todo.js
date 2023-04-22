@@ -118,11 +118,19 @@ const Todo = () => {
               title="Remove All"
               onClick={() => setItems([])}
             >
-              <span> Remove </span>
+              <span class="material-symbols-outlined">delete_sweep</span>
             </button>
           </div>
         </div>
       </div>
+      <footer>
+        <p>
+          <b>
+            <i>Vishal Bade </i>
+          </b>
+          <big>|</big> <i> Development in progress.</i>
+        </p>
+      </footer>
     </>
   );
 };
