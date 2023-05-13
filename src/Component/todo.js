@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../todo_img.png";
+
+// to get data from localStorage
+const getLocalItems = () => {
+  let list = localStorage.getItem('lists');
+  // console.log(list);
+
+  if(list){
+    return JSON.parse(localStorage.getItem('lists'));
+  }else {
+    return [];
+  }
+}
 
 const Todo = () => {
   const [inputData, setInputData] = useState("");
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(getLocalItems());
   const [toggleSubmit, setToggleSubmit] = useState(true);
   const [isEditItem, setIsEditItem] = useState(null);
 
@@ -48,6 +60,11 @@ const Todo = () => {
     setInputData(newEditItem.name);
     setIsEditItem(id);
   };
+
+  // add data to LocalStorage
+  useEffect(() => {
+    localStorage.setItem('lists', JSON.stringify(items));
+  }, [items]);
 
   return (
     <>
